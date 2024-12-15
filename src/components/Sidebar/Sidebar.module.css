@@ -1,0 +1,11 @@
+.sidebar {
+  width: 100%;
+  height: max-content;
+  max-width: 310px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  box-shadow: 1px 1px 5px var(--light-grey);
+  border-radius: var(--radius-base);
+}
