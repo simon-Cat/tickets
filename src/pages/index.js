@@ -1,7 +1,49 @@
-import Head from "next/head";
-import styles from "@/styles/Home.module.css";
+import Head from "next/head"
+import styles from "@/styles/Home.module.css"
+import Image from "next/image"
+import Sidebar from "@/components/Sidebar/Sidebar"
+import Tickets from "@/components/Tickets/Tickets"
+import currencies from "/public/currencies.json"
+import tickets from "/public/tickets.json"
+import { useMemo, useState } from "react"
 
 export default function Home() {
+  const [ filterParams, setFilterParams ] = useState([])
+  
+  const { displayedTickets, availableFilters } = useMemo(() => {
+    let filteredTickets = null
+    const filterOptions = new Set()
+
+    const isNoFilterParams = !filterParams.length ? true : false
+    if (isNoFilterParams) {
+      filteredTickets = tickets.toSorted((a, b) => a.price - b.price)
+    } else {
+      filteredTickets = tickets.filter(ticket => filterParams.includes(ticket.numberOfTransfers) ? ticket : null)
+    }
+
+    tickets.forEach(ticket => filterOptions.add(ticket.numberOfTransfers));
+
+    return {
+      displayedTickets: filteredTickets.toSorted((a, b) => a.price - b.price),
+      availableFilters: Array.from(filterOptions).toSorted((a, b) => a - b)
+    }
+  }, [tickets, filterParams])
+
+  const selectFilterParamHandler = (filterParam) => {
+    const newFilterParams = new Set(filterParams)
+    const isArray = Array.isArray
+
+    if(isArray(filterParam)) {
+      setFilterParams(filterParam)
+      return
+    } else if(newFilterParams.has(filterParam)) {
+      newFilterParams.delete(filterParam)
+    } else {
+      newFilterParams.add(filterParam)
+    }
+
+    setFilterParams(Array.from(newFilterParams).toSorted((a, b) => a - b))
+  }
   return (
     <>
       <Head>
@@ -10,6 +52,23 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <header className={styles.header}>
+        <Image
+          className={styles.logo}
+          src="./logo_airplane.svg"
+          alt="logo"
+          width={140}
+          height={140}
+        />
+      </header>
+      <main className={styles.main}>
+        <Sidebar
+          currencies={currencies}
+          availableFilters={availableFilters}
+          selectFilterParamHandler={selectFilterParamHandler}
+        />
+        <Tickets tickets={displayedTickets} />
+      </main>
     </>
-  );
+  )
 }
