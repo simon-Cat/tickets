@@ -1,0 +1,21 @@
+.filter {
+
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.checkbox {
+  width: 100%;
+  max-width: max-content;
+}
