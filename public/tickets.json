@@ -1,0 +1,152 @@
+[
+  {
+    "id": "1234",
+    "numberOfTransfers": 2,
+    "price": 15000,
+    "departure": {
+      "time": "10:20",
+      "place": "SVO, Москва",
+      "date": "9 окт 2018, Пт"
+    },
+    "arrival": {
+      "time": "18:45",
+      "place": "TLV, Тель-Авив",
+      "date": "10 окт 2018, Сб"
+    }
+  },
+  {
+    "id": "5678",
+    "numberOfTransfers": 1,
+    "price": 25000,
+    "departure": {
+      "time": "15:10",
+      "place": "LED, Санкт-Петербург",
+      "date": "10 окт 2018, Сб"
+    },
+    "arrival": {
+      "time": "21:30",
+      "place": "TLV, Тель-Авив",
+      "date": "10 окт 2018, Сб"
+    }
+  },
+  {
+    "id": "9101",
+    "numberOfTransfers": 3,
+    "price": 12000,
+    "departure": {
+      "time": "08:45",
+      "place": "DME, Москва",
+      "date": "11 окт 2018, Вс"
+    },
+    "arrival": {
+      "time": "19:15",
+      "place": "TLV, Тель-Авив",
+      "date": "12 окт 2018, Пн"
+    }
+  },
+  {
+    "id": "2345",
+    "numberOfTransfers": 0,
+    "price": 28000,
+    "departure": {
+      "time": "12:30",
+      "place": "VVO, Владивосток",
+      "date": "12 окт 2018, Пн"
+    },
+    "arrival": {
+      "time": "06:45",
+      "place": "TLV, Тель-Авив",
+      "date": "13 окт 2018, Вт"
+    }
+  },
+  {
+    "id": "6789",
+    "numberOfTransfers": 1,
+    "price": 22000,
+    "departure": {
+      "time": "19:00",
+      "place": "SVO, Москва",
+      "date": "13 окт 2018, Вт"
+    },
+    "arrival": {
+      "time": "01:05",
+      "place": "TLV, Тель-Авив",
+      "date": "14 окт 2018, Ср"
+    }
+  },
+  {
+    "id": "0123",
+    "numberOfTransfers": 2,
+    "price": 18000,
+    "departure": {
+      "time": "11:45",
+      "place": "LED, Санкт-Петербург",
+      "date": "14 окт 2018, Ср"
+    },
+    "arrival": {
+      "time": "18:20",
+      "place": "TLV, Тель-Авив",
+      "date": "14 окт 2018, Ср"
+    }
+  },
+  {
+    "id": "4567",
+    "numberOfTransfers": 3,
+    "price": 14000,
+    "departure": {
+      "time": "05:30",
+      "place": "DME, Москва",
+      "date": "15 окт 2018, Чт"
+    },
+    "arrival": {
+      "time": "16:15",
+      "place": "TLV, Тель-Авив",
+      "date": "15 окт 2018, Чт"
+    }
+  },
+  {
+    "id": "8901",
+    "numberOfTransfers": 1,
+    "price": 24000,
+    "departure": {
+      "time": "14:15",
+      "place": "VVO, Владивосток",
+      "date": "16 окт 2018, Пт"
+    },
+    "arrival": {
+      "time": "08:15",
+      "place": "TLV, Тель-Авив",
+      "date": "17 окт 2018, Сб"
+    }
+  },
+  {
+    "id": "2468",
+    "numberOfTransfers": 2,
+    "price": 19000,
+    "departure": {
+      "time": "09:30",
+      "place": "SVO, Москва",
+      "date": "17 окт 2018, Сб"
+    },
+    "arrival": {
+      "time": "15:45",
+      "place": "TLV, Тель-Авив",
+      "date": "17 окт 2018, Сб"
+    }
+  },
+  {
+    "id": "6801",
+    "numberOfTransfers": 3,
+    "price": 16000,
+    "departure": {
+      "time": "17:15",
+      "place": "LED, Санкт-Петербург",
+      "date": "18 окт 2018, Вс"
+    },
+    "arrival": {
+      "time": "23:05",
+      "place": "TLV, Тель-Авив",
+      "date": "18 окт 2018, Вс"
+    }
+  }
+]

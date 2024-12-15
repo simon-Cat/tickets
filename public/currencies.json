@@ -1,0 +1,14 @@
+[
+    {
+        "id": "rub",
+        "value": "RUB"
+    },
+    {
+        "id": "usd",
+        "value": "USD"
+    },
+    {
+        "id": "eur",
+        "value": "EUR"
+    }
+]
