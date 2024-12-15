@@ -1,0 +1,13 @@
+.tickets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 750px;
+}
+
+@media screen and (max-width: 460px) {
+  .tickets {
+    gap: 40px;
+  }
+}
