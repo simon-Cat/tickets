@@ -1,4 +1,15 @@
 :root {
+  --light-grey: #c6c2c2;
+  --dark-grey: #4f4f4f;
+  --light-orange: #eb7236;
+  --white: #ffffff;
+  --light-blue: #5a9df0;
+  --lighter-blue: #e0efff;
+
+  --radius-base: 5px;
+  --radius-full: 100%;
+
+  --transition-duration-timing: 0.3s ease;
 }
 
 * {
@@ -10,4 +21,20 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+input {
+  appearance: none;
+  outline: none;
 }
