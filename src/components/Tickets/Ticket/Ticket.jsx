@@ -4,7 +4,7 @@ import { Open_Sans } from 'next/font/google'
 
 const openSans = Open_Sans({ subsets: ['latin'] })
 
-const Ticket = ({ info, classModifier = "" }) => {
+export default function Ticket({ info, classModifier = "" }) {
   return (
     <div
       className={`${styles.ticket} ${classModifier}`}
@@ -37,5 +37,3 @@ const Ticket = ({ info, classModifier = "" }) => {
     </div>
   )
 }
-
-export default Ticket

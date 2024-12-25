@@ -3,7 +3,7 @@ import { calculateDeclination } from "@/utils/utils"
 import { useState } from "react"
 import Checkbox from "@/components/Filter/Checkbox/Checkbox"
 
-const Filter = ({ params, selectFilterParamHandler, classModifier = "" }) => {
+export default function Filter({ params, selectFilterParamHandler, classModifier = "" }) {
   const [ isAllFilterParamsSelected, setIsAllFilterParamsSelected ] = useState(false)
 
   const selectAllFilterParams = () => {
@@ -63,5 +63,3 @@ const Filter = ({ params, selectFilterParamHandler, classModifier = "" }) => {
     </section>
   )
 }
-
-export default Filter
