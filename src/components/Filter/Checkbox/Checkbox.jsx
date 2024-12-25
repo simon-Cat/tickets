@@ -1,6 +1,6 @@
 import styles from "@/components/Filter/Checkbox/Checkbox.module.css"
 
-const Checkbox = ({ param = null, label, selectHandler, id }) => {
+export default function Checkbox({ param = null, label, selectHandler, id }) {
   const selectCheckbox = () => {
     param !== null ? selectHandler(param) : selectHandler()
   }
@@ -21,5 +21,3 @@ const Checkbox = ({ param = null, label, selectHandler, id }) => {
     </div>
   )
 }
-
-export default Checkbox

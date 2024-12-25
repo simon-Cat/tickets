@@ -2,12 +2,12 @@ import styles from "@/components/Sidebar/Sidebar.module.css"
 import CurrencySwitcher from "@/components/CurrencySwitcher/CurrencySwitcher"
 import Filter from "@/components/Filter/Filter"
 
-const Sidebar = ({
+export default function Sidebar({
   currencies,
   availableFilters,
   selectFilterParamHandler,
   classModifier = "",
-}) => {
+}) {
   return (
     <div className={`${styles.sidebar} ${classModifier}`}>
       <CurrencySwitcher currencies={currencies} />
@@ -18,5 +18,3 @@ const Sidebar = ({
     </div>
   )
 }
-
-export default Sidebar

@@ -1,7 +1,7 @@
 import styles from "@/components/CurrencySwitcher/CurrencySwitcher.module.css"
 import { useState } from "react"
 
-const CurrencyElement = ({ value }) => {
+function CurrencyElement({ value }) {
   const [ isCurrencySelected, setIsCurrencySelected ] = useState(false)
   const selectCurrency = () => {
     setIsCurrencySelected(!isCurrencySelected)
@@ -17,7 +17,7 @@ const CurrencyElement = ({ value }) => {
   )
 }
 
-const CurrencySwitcher = ({ currencies, classModifier = "" }) => {
+export default function CurrencySwitcher({ currencies, classModifier = "" }) {
   return (
     <article className={`${styles.currencySwitcher} ${classModifier}`}>
       <h2 className={styles.title}>Валюта</h2>
@@ -32,5 +32,3 @@ const CurrencySwitcher = ({ currencies, classModifier = "" }) => {
     </article>
   )
 }
-
-export default CurrencySwitcher
